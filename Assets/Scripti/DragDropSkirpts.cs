@@ -38,6 +38,14 @@ public class DragDropSkirpts : MonoBehaviour,IPointerDownHandler,IBeginDragHandl
 
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Beigta objekta Vilkšana!");
+		kanvasGrupa.alpha = 1f;
+
+
+		if (objektuSkripts.valistahaVieta == false) {
+			kanvasGrupa.blocksRaycasts = true;
+		} else {
+			objektuSkripts.pedejaijsVilktais = null;
+		}
 
 	}
 }
