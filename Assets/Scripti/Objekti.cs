@@ -30,11 +30,11 @@ public class Objekti : MonoBehaviour {
 	public GameObject pedejaijsVilktais = null;
 	// Use this for initialization
 	void Start () {
-		
+		atkrKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
+		artoKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
+		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
