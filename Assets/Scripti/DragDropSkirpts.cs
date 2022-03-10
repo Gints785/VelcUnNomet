@@ -32,12 +32,13 @@ public class DragDropSkirpts : MonoBehaviour,IPointerDownHandler,IBeginDragHandl
 
 	public void OnDrag(PointerEventData notikums){
 		Debug.Log ("Notiekt vilkšana!");
-
+		objektuSkripts.pedejaijsVilktais = notikums.pointerDrag;
 		velkObjRectTransf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
 	}
 
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Beigta objekta Vilkšana!");
+
 		kanvasGrupa.alpha = 1f;
 
 
@@ -46,6 +47,6 @@ public class DragDropSkirpts : MonoBehaviour,IPointerDownHandler,IBeginDragHandl
 		} else {
 			objektuSkripts.pedejaijsVilktais = null;
 		}
-
+		objektuSkripts.valistahaVieta = false;
 	}
 }
