@@ -27,6 +27,8 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 				if ((rotacijasStarpiba <= 6 || rotacijasStarpiba >= 354 && rotacijasStarpiba <= 360) && (xIzmeruStarp <= 0.1 && yIzmeruStarp <= 0.1)) {
 					objektuSkripts.valistahaVieta = true;
 
+					notikums.pointerDrag.GetComponent<RectTransform> ().anchoredPosition = GetComponent<RectTransform> ().anchoredPosition;
+
 					notikums.pointerDrag.GetComponent<RectTransform> ().localRotation = GetComponent<RectTransform> ().localRotation;
 
 					notikums.pointerDrag.GetComponent<RectTransform> ().localScale = GetComponent<RectTransform> ().localScale;
@@ -43,6 +45,9 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 
 					case "Skola":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [3]);
+						break;
+					case "Civil":
+						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [4]);
 						break;
 
 					default:
@@ -67,6 +72,9 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 
 				case "Skola":
 					objektuSkripts.autobuss.GetComponent<RectTransform> ().localPosition = objektuSkripts.bussKoord;
+					break;
+				case "Civil":
+					objektuSkripts.masina.GetComponent<RectTransform> ().localPosition = objektuSkripts.masinKoord;
 					break;
 
 				default:

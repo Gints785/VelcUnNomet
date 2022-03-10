@@ -9,7 +9,7 @@ public class Objekti : MonoBehaviour {
 	public GameObject atkritumuMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
-
+	public GameObject masina;
 
 
 	[HideInInspector]
@@ -18,6 +18,8 @@ public class Objekti : MonoBehaviour {
 	public Vector2 artoKoord;
 	[HideInInspector]
 	public Vector2 bussKoord;
+	[HideInInspector]
+	public Vector2 masinKoord;
 
 
 	public AudioSource skanasAvots;
@@ -33,6 +35,7 @@ public class Objekti : MonoBehaviour {
 		atkrKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
 		artoKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
+		masinKoord = masina.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
