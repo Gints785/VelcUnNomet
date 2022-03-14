@@ -10,6 +10,14 @@ public class Objekti : MonoBehaviour {
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
 	public GameObject masina;
+	public GameObject cementamasina;
+	public GameObject masina2;
+	public GameObject ekskavators;
+	public GameObject policija;
+	public GameObject traktors;
+	public GameObject traktors2;
+	public GameObject ugunsdzeseji;
+
 
 
 	[HideInInspector]
@@ -20,6 +28,21 @@ public class Objekti : MonoBehaviour {
 	public Vector2 bussKoord;
 	[HideInInspector]
 	public Vector2 masinKoord;
+	[HideInInspector]
+	public Vector2 cementKoord;
+	[HideInInspector]
+	public Vector2 masin2Koord;
+	[HideInInspector]
+	public Vector2 EksKoord;
+	[HideInInspector]
+	public Vector2 polKoord;
+	[HideInInspector]
+	public Vector2 trakKoord;
+	[HideInInspector]
+	public Vector2 trak2Koord;
+	[HideInInspector]
+	public Vector2 ugunKoord;
+
 
 
 	public AudioSource skanasAvots;
@@ -36,6 +59,13 @@ public class Objekti : MonoBehaviour {
 		artoKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
 		masinKoord = masina.GetComponent<RectTransform> ().localPosition;
+		cementKoord = cementamasina.GetComponent<RectTransform> ().localPosition;
+		masin2Koord = masina2.GetComponent<RectTransform> ().localPosition;
+		EksKoord = ekskavators.GetComponent<RectTransform> ().localPosition;
+		polKoord = policija.GetComponent<RectTransform> ().localPosition;
+		trakKoord = traktors.GetComponent<RectTransform> ().localPosition;
+		trak2Koord = traktors2.GetComponent<RectTransform> ().localPosition;
+		ugunKoord = ugunsdzeseji.GetComponent<RectTransform> ().localPosition;
 	}
 	
 	// Update is called once per frame
