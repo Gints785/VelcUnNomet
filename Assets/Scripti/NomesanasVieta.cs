@@ -37,38 +37,49 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 
 					case "Atkritumi":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [1]);
+						Uzvara.Place [0] = true;
 						break;
 
 					case "Slimnica":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [2]);
+						Uzvara.Place [1] = true;
 						break;
 
 					case "Skola":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [3]);
+						Uzvara.Place [2] = true;
 						break;
 					case "Civil":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [4]);
+						Uzvara.Place [3] = true;
 						break;
 					case "Buv":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [5]);
+						Uzvara.Place [4] = true;
 						break;
 					case "Civil2":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [6]);
+						Uzvara.Place [5] = true;
 						break;
 					case "Eks":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [7]);
+						Uzvara.Place [6] = true;
 						break;
 					case "Pol":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [8]);
+						Uzvara.Place [7] = true;
 						break;
 					case "Buv2":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [9]);
+						Uzvara.Place [8] = true;
 						break;
 					case "trak":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [10]);
+						Uzvara.Place [9] = true;
 						break;
 					case "Uguns":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [11]);
+						Uzvara.Place [10] = true;
 						break;
 
 					default:
