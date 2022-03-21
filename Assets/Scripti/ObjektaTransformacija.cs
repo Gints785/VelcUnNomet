@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjektaTransformacija : MonoBehaviour {
 
 	public Objekti objektuSkripts;
-
+	//Skripts kas lauj parvietot obejuktus.
 	void Update () {
 		if (objektuSkripts.pedejaijsVilktais != null) {
 			if (Input.GetKey (KeyCode.Z)) {

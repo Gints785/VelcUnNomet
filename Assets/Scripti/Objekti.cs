@@ -5,7 +5,7 @@ using UnityEngine;
 public class Objekti : MonoBehaviour {
 	// Uzglabā ainā esošo kanvu
 	public Canvas kanva;
-
+	// Izveido Speles Objektus
 	public GameObject atkritumuMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
@@ -19,7 +19,7 @@ public class Objekti : MonoBehaviour {
 	public GameObject ugunsdzeseji;
 
 
-
+	// Paslepj  Objektus Inspektora
 	[HideInInspector]
 	public Vector2 atkrKoord;
 	[HideInInspector]

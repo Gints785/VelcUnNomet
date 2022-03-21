@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class NomesanasVieta : MonoBehaviour,IDropHandler {
-
+	
 	private float vietasZrot, velkObjZrot, rotacijasStarpiba, xIzmeruStarp, yIzmeruStarp;
 	private Vector2 vietasIzm, velkObjIzm;
 
@@ -38,11 +38,13 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 					case "Atkritumi":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [1]);
 						Uzvara.Place [0] = true;
+						Debug.Log ("Skaits 1");
 						break;
 
 					case "Slimnica":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaAtskanot [2]);
 						Uzvara.Place [1] = true;
+						Debug.Log ("Skaits 2");
 						break;
 
 					case "Skola":
@@ -83,7 +85,7 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 						break;
 
 					default:
-						Debug.Log ("Nedefinets tags!");
+						//Debug.Log ("Nedefinets tags!");
 						break;
 					}
 				}
@@ -96,6 +98,7 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 
 				case "Atkritumi":
 					objektuSkripts.atkritumuMasina.GetComponent<RectTransform> ().localPosition = objektuSkripts.atkrKoord;
+
 					break;
 
 				case "Slimnica":
@@ -131,7 +134,7 @@ public class NomesanasVieta : MonoBehaviour,IDropHandler {
 					break;
 
 				default:
-					Debug.Log ("Nedefinets tags!");
+					Debug.Log ("Nedefinets tags1!");
 					break;
 				}
 			}

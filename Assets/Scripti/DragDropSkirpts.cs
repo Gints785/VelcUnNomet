@@ -20,24 +20,25 @@ public class DragDropSkirpts : MonoBehaviour,IPointerDownHandler,IBeginDragHandl
 		//pieklust objekta RectTransofrm komponentei
 		velkObjRectTransf = GetComponent<RectTransform>();
 	}
-	public void OnPointerDown(PointerEventData notikums){
-		Debug.Log ("Uzklikšķināts uz velkama objekta!");
-	}
 
+	public void OnPointerDown(PointerEventData notikums){
+		//Debug.Log ("Uzklikšķināts uz velkama objekta!");
+	}
+	//uzsakt objektu vilksanu
 	public void OnBeginDrag(PointerEventData notikums){
-		Debug.Log ("Uzsākta vilkšana!");
+		//Debug.Log ("Uzsākta vilkšana!");
 		kanvasGrupa.alpha = 0.6f;
 		kanvasGrupa.blocksRaycasts = false;
 	}
-
+	// objektu vilksanas skirpts
 	public void OnDrag(PointerEventData notikums){
-		Debug.Log ("Notiekt vilkšana!");
+		//Debug.Log ("Notiekt vilkšana!");
 		objektuSkripts.pedejaijsVilktais = notikums.pointerDrag;
 		velkObjRectTransf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
 	}
-
+	// objektu nomesanas skirpts
 	public void OnEndDrag(PointerEventData notikums){
-		Debug.Log ("Beigta objekta Vilkšana!");
+		//Debug.Log ("Beigta objekta Vilkšana!");
 
 		kanvasGrupa.alpha = 1f;
 
